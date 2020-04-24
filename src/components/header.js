@@ -17,7 +17,7 @@ const Header = () => {
         color: 'white'
       }}
     >
-      <h1>The pathname is -->&nbsp;{pathname}</h1>
+      <h1>The pathname is -->&nbsp;{pathname || 'undefined'}</h1>
     </header>
   )
 }

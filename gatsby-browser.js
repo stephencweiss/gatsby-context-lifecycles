@@ -7,10 +7,13 @@
 // You can delete this file if you're not using it
 import React from "react"
 import { LocationProvider } from "./src/components/location-provider"
+import Layout from "./src/components/layout"
 
 export const wrapRootElement = props => {
   const { element } = props
   return (
-      <LocationProvider>{element}</LocationProvider>
+    <LocationProvider>
+      <Layout>{element}</Layout>
+    </LocationProvider>
   )
 }

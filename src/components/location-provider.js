@@ -10,10 +10,8 @@ export const LocationProvider = ({ children }) => {
         setLocation(windowLocation)
     }, [])
 
-    LocationContext.location = location
-    console.log({LocationContext})
     return (
-        <LocationContext.Provider value={LocationContext}>
+        <LocationContext.Provider value={location}>
             {children}
         </LocationContext.Provider>
     )
