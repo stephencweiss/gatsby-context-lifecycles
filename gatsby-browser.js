@@ -12,8 +12,8 @@ import { LocationProvider } from "./src/components/location-provider"
 export const wrapRootElement = props => {
   const { element } = props
   return (
-    <Layout>
+
       <LocationProvider>{element}</LocationProvider>
-    </Layout>
+
   )
 }
