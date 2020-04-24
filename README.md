@@ -1,3 +1,10 @@
+## Overview
+
+Bootstrapped with Gatsby's [default-starter](https://github.com/gatsbyjs/gatsby-starter-default)
+
+The purpose is to understand why / how to use a global context to easily communicate to pages/templates where they are and reduce redundant code (i.e. wrapping each page in a `Layout` instead of wrapping just the _root_ element with it).
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
