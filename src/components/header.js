@@ -1,37 +1,23 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useContext } from "react"
 import { LocationContext } from "./location-provider"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const location = useContext(LocationContext)
-  console.log({location})
+  const pathname = location && location.location && location.location.pathname
+  console.log({
+    location,
+    path: location && location.location && location.location.pathname,
+  })
   return (
     <header
       style={{
         background: `rebeccapurple`,
         marginBottom: `1.45rem`,
+        color: 'white'
       }}
     >
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
+      <h1>The pathname is -->&nbsp;{pathname}</h1>
     </header>
   )
 }

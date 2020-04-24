@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-const IndexPage = () => (
+const SecondPage = () => (
   <Layout>
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Link to="/">Go to page 1</Link>
@@ -11,5 +11,4 @@ const IndexPage = () => (
     </div>
   </Layout>
 )
-
-export default IndexPage
+export default SecondPage

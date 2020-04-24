@@ -6,7 +6,7 @@ export const LocationProvider = ({ children }) => {
     const [location, setLocation] = useState({})
     useEffect(() => {
         const {location:windowLocation} = window
-        console.log(`within context provider`,{window, windowLocation})
+        console.log(`within context provider`,{path: windowLocation.pathname})
         setLocation(windowLocation)
     }, [])
 
